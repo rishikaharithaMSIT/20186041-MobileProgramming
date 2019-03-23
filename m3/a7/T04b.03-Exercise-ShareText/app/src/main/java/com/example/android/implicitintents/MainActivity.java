@@ -154,7 +154,7 @@ public class MainActivity extends AppCompatActivity {
         String mimeType = "text/plain";
         String title = "Learning How to Share";
 
-        ShareCompat.IntentBuilder                
+        ShareCompat.IntentBuilder
                 .from(this)
                 .setType(mimeType)
                 .setChooserTitle(title)
