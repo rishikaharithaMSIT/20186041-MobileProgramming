@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/homebuttonbackground"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/zoomprodName"
+                android:textAlignment="center"
+                android:layout_marginBottom="10dp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/zoomprodimg"
+                android:src="@drawable/startshopping"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="18dp"
+                android:id="@+id/zoomprod"
+                android:textAlignment="center"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

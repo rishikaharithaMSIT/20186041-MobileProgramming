@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        android:elevation="8dp"
+        android:dividerHeight="0.0px"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:id="@+id/productcard"
+        android:divider="@android:color/transparent"
+        app:cardPreventCornerOverlap="false"
+        android:layout_margin="4dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/prodrecimg"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:src="@drawable/startshopping" />
+
+            <TextView
+                android:id="@+id/ProdrecName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@id/prodrecimg"
+                android:textSize="20dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:text="Hello_Name" />
+
+            <TextView
+                android:id="@+id/prodCat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ProdrecName"
+                android:layout_toRightOf="@id/prodrecimg"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="15dp"
+                android:text="Hello Category" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/prodCat"
+                android:id="@+id/loadsym"
+                android:layout_toRightOf="@id/prodrecimg"
+                android:src="@drawable/loadintocart" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/prodCat"
+                android:layout_marginTop="0dp"
+                android:textSize="15dp"
+                android:id="@+id/prodstatus"
+                android:paddingTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:text="Available"
+                android:layout_toEndOf="@+id/loadsym"
+                android:layout_toRightOf="@+id/loadsym" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
