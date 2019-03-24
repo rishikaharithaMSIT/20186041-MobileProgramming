@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LostGame">
+
+    <TextView
+        android:id="@+id/youLost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="BETTER LUCK NEXT TIME!"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/lostImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/nine" />
+
+    <TextView
+        android:id="@+id/word2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="word"
+        android:textSize="24sp"
+        app:fontFamily="sans-serif" />
+
+    <Button
+        android:id="@+id/knowMore2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Know More About Word"
+        android:onClick="knowMore"/>
+
+    <Button
+        android:id="@+id/playAgain2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play Again"
+        android:onClick="playAgain"/>
+
+    <Button
+        android:id="@+id/home2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HOME"
+        android:onClick="redirectHome"/>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WinGame">
+
+    <TextView
+        android:id="@+id/youWon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="YOU WON!!"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/winImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ten" />
+
+    <TextView
+        android:id="@+id/word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="word"
+        android:textSize="24sp"
+        app:fontFamily="sans-serif" />
+
+    <Button
+        android:id="@+id/knowMore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Know More About Word"
+        android:onClick="knowMore"/>
+
+    <Button
+        android:id="@+id/playAgain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play Again"
+        android:onClick="playAgain"/>
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HOME"
+        android:onClick="redirectHome"/>
+</LinearLayout>

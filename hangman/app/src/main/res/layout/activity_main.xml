@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+   >
+
+        <ImageView
+            android:id="@+id/hangmanImg"
+            android:layout_width="wrap_content"
+            android:layout_height="350dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/hangamanimage"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="52dp"
+            android:scaleType="fitXY"/>
+
+        <Button
+            android:id="@+id/playGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="Play Game"
+            android:onClick="playGame"
+            tools:layout_editor_absoluteX="152dp"
+            tools:layout_editor_absoluteY="468dp"
+            style="@style/Widget.AppCompat.Button"/>
+
+        <Button
+            android:id="@+id/howPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="howToPlay"
+            android:text="How to Play"
+            tools:layout_editor_absoluteX="152dp"
+            tools:layout_editor_absoluteY="547dp"
+            style="@style/Widget.AppCompat.Button"/>
+
+
+
+
+</LinearLayout>
+
